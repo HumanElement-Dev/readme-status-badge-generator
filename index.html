@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>README Status Badge Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <h1>README Status Badge Generator</h1>
+    <p>Generate a simple status badge for your project README.</p>
+
+    <label>
+      Project Name
+      <input id="project" placeholder="My Cool Project" />
+    </label>
+
+    <label>
+      Status
+      <select id="status">
+        <option value="active">Active</option>
+        <option value="experimental">Experimental</option>
+        <option value="paused">Paused</option>
+        <option value="archived">Archived</option>
+      </select>
+    </label>
+
+    <button id="generate">Generate</button>
+
+    <pre id="output"></pre>
+    <button id="copy" hidden>Copy to Clipboard</button>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
